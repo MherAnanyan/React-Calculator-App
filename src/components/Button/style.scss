@@ -1,0 +1,32 @@
+.btn-area {
+  .initial-btn {
+    padding: 1rem;
+    background-color: var(--primary-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7.25rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    border: none;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+}
+
+.btn-area :hover {
+  transition: none;
+  background-color: var(--hover);
+}
+
+.active {
+  .initial-btn {
+    background-color: var(--light-grayish-cyan-1);
+  }
+}

@@ -1,0 +1,91 @@
+.input-area {
+  position: relative;
+  input[type='number'] {
+    padding: 1rem 1rem 1rem 2.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: var(--light-grayish-cyan-2);
+    font-size: 1.5rem;
+    width: 100%;
+    height: 2.9rem;
+    font-weight: bold;
+    text-align: right;
+    color: var(--primary-dark);
+    position: relative;
+    -moz-appearance: textfield;
+  }
+  img {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 1rem;
+    z-index: 100;
+    color: var(--dark-grayish-cyan-2);
+    font-size: 1.5rem;
+  }
+  .input {
+    position: relative;
+  }
+
+  input[type='number']:focus {
+    outline: var(--secondary-light) solid 2px;
+  }
+
+  input[type='number'].error,
+  input[type='number'].error:focus {
+    outline: var(--error) solid 2px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label,
+#tipCustom {
+  padding: 1rem;
+  background-color: var(--primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7.25rem;
+  height: 3rem;
+  border-radius: 0.25rem;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  user-select: none;
+}
+
+label:active {
+  background-color: var(--light-grayish-cyan-1) !important;
+}
+
+#tipCustom {
+  background-color: var(--light-grayish-cyan-2);
+  color: var(--primary-dark);
+  padding: 1rem 0.75rem;
+}
+#tipCustom::placeholder {
+  color: var(--primary-dark);
+  font-size: 1rem;
+  //   text-align: center;
+}
+
+.error-msg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--error);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.custom {
+  padding-left: 0 !important;
+}

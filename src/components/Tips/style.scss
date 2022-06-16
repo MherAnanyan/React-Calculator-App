@@ -1,0 +1,10 @@
+.tip-area {
+  .tip-title {
+    margin-bottom: 1rem;
+  }
+  .btn-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.875rem;
+  }
+}
