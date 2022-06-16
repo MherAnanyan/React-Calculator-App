@@ -1,0 +1,21 @@
+.header-area {
+  min-height: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(0.625rem + 2vmin);
+  color: white;
+  width: 100%;
+  padding: 1rem 0 5.5rem;
+  .header-logo {
+    height: 3.25rem;
+    pointer-events: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .header-area {
+    padding: 1em 0 2.5rem;
+  }
+}
